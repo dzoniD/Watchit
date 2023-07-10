@@ -3,15 +3,17 @@ import React from "react";
 
 import { ModalProps } from "../../types";
 
-import { Modal as ModalUtil } from '../../utils/modal_utils';
+// import { Modal as ModalUtil } from '../../utils/modal_utils';
+
 
 export const ModalComponent = React.forwardRef((propsValues: ModalProps, ref) => {
+    ModalComponent.displayName = "ModalComponent"
  const {
     component: RenderInner,
     props,
-    closable:true,
-    onClose: () => {},
-    closeModal: () => {},
+    closable=true,
+    onClose,
+    closeModal,
     isVisible,
     width = 500,
     title,
@@ -25,12 +27,12 @@ export const ModalComponent = React.forwardRef((propsValues: ModalProps, ref) =>
  const onModalClose = (isClose:any) => {
     if(!closable) return;
     if(isClose) {
-        closeModal();
-        onclose();
+        closeModal && closeModal();
+        onClose && onClose();
     }
 
     //modal method to close the modal
-    ModalUtil.close();
+    // ModalUtil.close();
  }
 
  return (

@@ -15,7 +15,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props
   const [emblaRef] = useEmblaCarousel(options)
 
-  console.log(props)
+  // console.log(props)
 
   return (
     <div className={styles.carousel_container}>

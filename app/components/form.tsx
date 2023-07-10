@@ -1,4 +1,5 @@
 "use client"
+import { Movies } from '@/types'
 import React, { useState } from 'react'
 type FormProps = {
   movies: Movies[]
@@ -7,7 +8,7 @@ type FormProps = {
 export default function Form(props: FormProps) {
     const [value, setValue ] = useState('vla@vbla.com')
 
-    console.log(props)
+    // console.log(props)
 
   return (
     <form>form
