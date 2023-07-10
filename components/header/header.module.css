@@ -1,0 +1,52 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+    background-color: #1d1d1d;
+    font-family: Arimo,Arial,Helvetica,"Lucida Grande",sans-serif;
+}
+
+.search{
+    padding: 7px 7px 7px 30px;
+    border-radius: 15px;
+    font-weight: 600;
+    border: 2px solid #333;
+    background: #1d1d1d url("https://yts.mx/assets/images/website/icon-search.svg") no-repeat 9px 10px;
+}
+
+.ul > li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    color: #919191;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav_links{
+    display: flex;
+    align-items: center;
+}
+
+.logNsign > span{
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.divider{
+    margin-left: 15px;
+}
+
+.divider::after{
+    content: '|';
+    width: 10px;
+    margin-left: 10px ;
+    height: 10px;
+    display: inline-block;
+}

@@ -1,0 +1,24 @@
+
+.carousel_container{
+  margin: 30px 0;
+  width: 100%;
+}
+
+.embla {
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(0,156,184,1) 0%, rgba(17,218,179,1) 50%, rgba(35,153,172,1) 84%, rgba(0,212,255,1) 95%);
+    width: 100% !important;
+    height: 500px;
+  }
+  .embla__container {
+  display: flex;
+
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+
+  .embla__slide__img{
+    object-fit: contain;
+  } 
