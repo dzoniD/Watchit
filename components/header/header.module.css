@@ -4,6 +4,7 @@
     padding: 0.5rem 3rem;
     background-color: #1d1d1d;
     font-family: Arimo,Arial,Helvetica,"Lucida Grande",sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.308);
 }
 
 .search{
