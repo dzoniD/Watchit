@@ -1,10 +1,10 @@
 
 .container{
   background-color: #1F1F1F;
-  height: 100vh;
+  height: fit-content;
   position: relative;
   overflow: auto;
-  padding: 0 20px;
+  padding: 0 20px 25px;
 }
 
 .title {
