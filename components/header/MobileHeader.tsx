@@ -13,8 +13,8 @@ export default function MobileHeader() {
           <p>🇼​​🇦​​🇹​​🇨​​🇭​​🇮​​🇹</p>
         </div>
         <div className={styles.icons__container}>
-        <CgSearch size={30} color='white'className={styles.searchIcon}/>
-        <FaUserLarge size={24}  color='white'/>
+        <CgSearch size={25} color='white'className={styles.searchIcon}/>
+        <FaUserLarge size={20}  color='white'/>
         </div>
     </header>
   )
