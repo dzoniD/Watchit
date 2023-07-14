@@ -33,7 +33,7 @@ export default async function User() {
 
       {links.map((link,i) => {
         if(i){
-          return (<div className={styles.profile__link}>
+          return (<div key={'userpage' + i} className={styles.profile__link}>
             <div className={styles.profile__link__icon}>
             {link.icon}  
             </div><p>{link.text}</p>
@@ -41,7 +41,7 @@ export default async function User() {
         }
 
         return (
-          <div className={styles.first__profile__link}>
+          <div key={'userpage' + i} className={styles.first__profile__link}>
             <div className={styles.profile__link__icon}>
             {link.icon}  
             </div><p>{link.text}</p>
