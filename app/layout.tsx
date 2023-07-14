@@ -2,6 +2,7 @@ import './globals.css'
 import Header from '../components/header/Header';
 
 import { Inter } from 'next/font/google'
+import MobileHeader from '@/components/header/MobileHeader';
 
 export const metadata = {
   title: 'Watchit',
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <Header/>
+      {false ? <Header/> : <MobileHeader/>} 
         {children}
       </body>
     </html>
