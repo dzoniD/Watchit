@@ -15,12 +15,12 @@ import { IconType } from 'react-icons';
 
 export default async function User() {
 
-  const links:{text:string, icon: JSX.Element}[] = [
-    {text:'Edit profile', icon:<FaPen color='white' size={22}/>  }, 
-    {text:'Password', icon: <FaKey color='white' size={22}/>  }, 
-    {text:'Bookmark', icon: <FaBookmark color='white' size={22}/>},
-    {text:'Favorite', icon: <FaHeart color='white' size={22}/>  },  
-    {text:'Log out', icon: <BiLogOut color='white' size={26}/>  }
+  const links:{text:string, icon: JSX.Element, link:string}[] = [
+    {text:'Edit profile', icon:<FaPen color='white' size={22}/>, link:'/edit-user',  }, 
+    {text:'Password', icon: <FaKey color='white' size={22}/>, link:'/change-password',  }, 
+    {text:'Bookmark', icon: <FaBookmark color='white' size={22}/>, link:'/bookmarks',},
+    {text:'Favorite', icon: <FaHeart color='white' size={22}/>, link:'/favorites',  },  
+    {text:'Log out', icon: <BiLogOut color='white' size={26}/>, link:'/log-out',  }
   ]
 
   return (
@@ -33,19 +33,23 @@ export default async function User() {
 
       {links.map((link,i) => {
         if(i){
-          return (<div key={'userpage' + i} className={styles.profile__link}>
+          return (<Link key={'userpage' + i}  className={styles.profile__link} href={link.link}>
+            
             <div className={styles.profile__link__icon}>
             {link.icon}  
-            </div><p>{link.text}</p>
-          </div>)
+            </div>
+            <p>{link.text}</p>
+          </Link>
+          )
         }
 
         return (
-          <div key={'userpage' + i} className={styles.first__profile__link}>
+          <Link href={link.link} key={'userpage' + i} className={styles.first__profile__link}>
             <div className={styles.profile__link__icon}>
             {link.icon}  
-            </div><p>{link.text}</p>
-          </div>
+            </div>
+            <p>{link.text}</p>
+          </Link>
         )
       })}
          
