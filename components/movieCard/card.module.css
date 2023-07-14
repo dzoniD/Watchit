@@ -2,10 +2,13 @@
 .card {
     border-radius: 5px;
     box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.3);
-    width: 300px;
+    /* width: 180px; */
     display: inline-block;
-    max-width:280px;
-    height: 100%;
+    max-width:220px;
+    min-width: 180px;
+    height: fit-content;
+    margin-bottom: 20px;
+    width: 100%;
   }
   
   .card_head {
@@ -23,6 +26,12 @@
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fa782e', endColorstr='#c82930', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
     border-radius: 25px 25px 0 0;
+  }
+
+  .product_desc{
+    background-color: #EDEDE9;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .card_head img {
@@ -244,4 +253,9 @@
   }
   
   
-  
+  @media (max-width: 480px) {
+    /* … */
+    .card{
+      width: 180px;
+    }
+  }
