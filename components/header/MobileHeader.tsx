@@ -9,12 +9,12 @@ export default function MobileHeader() {
   return (
     <header className={styles.header}>
         <FiMenu color='white' size={35}/>
-        <div className={styles.logo}>
+        <Link href={'/'}><div className={styles.logo}>
           <p>🇼​​🇦​​🇹​​🇨​​🇭​​🇮​​🇹</p>
-        </div>
+        </div></Link>
         <div className={styles.icons__container}>
         <CgSearch size={25} color='white'className={styles.searchIcon}/>
-        <FaUserLarge size={20}  color='white'/>
+        <Link href={'/signin'}><FaUserLarge size={20}  color='white'/></Link>
         </div>
     </header>
   )

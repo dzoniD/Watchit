@@ -8,11 +8,11 @@ import Link from 'next/link';
 
 // const inter = Inter({ subsets: ['latin'] })
 
-export default async function LoginPage() {
+export default async function SignInPage() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Log in</h1>
+      <h1 className={styles.title}>Sign in</h1>
       <div>
           <div className={styles.inputField}>
             <label htmlFor="email" className={styles.label}>Email or username</label>
@@ -23,7 +23,7 @@ export default async function LoginPage() {
             <input type="password" name="email" id={styles.email} />
           </div>
 
-          <button className={styles.button}>Log in</button>
+          <button className={styles.button}>Sign in</button>
           <div className={styles.line}>
             <div className={styles.box}>OR</div>
           </div>
@@ -41,7 +41,7 @@ export default async function LoginPage() {
           </div>
 
           <div>
-            <p className={styles.text}>Dont have an account? <Link href={'/signin'}><button className={styles.loginButton}>Sign in</button></Link></p>
+            <p className={styles.text}>Already a user? <Link href={'/login'}><button className={styles.loginButton}>Log in</button></Link></p>
           </div>
       </div>
     </div>

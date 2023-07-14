@@ -1,12 +1,4 @@
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1.25rem;
-    background-color: #1D1D1D;
-    font-family: Arimo,Arial,Helvetica,"Lucida Grande",sans-serif;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.150);
-}
+
 
 .icons__container{
     display: flex;
@@ -19,12 +11,13 @@
 
 .footer{
     color: #e4e4e4;
+    --button-color: #199EC7;
 }
 
 .footer__top{
     width: 100%;
     padding: 20px 20px 0;
-    background-color: #199EC7;
+    background-color: var(--button-color);
     color: #e4e4e4;
 }
 
